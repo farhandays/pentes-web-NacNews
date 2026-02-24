@@ -48,4 +48,17 @@ Eksploitasi IDOR berhasil. Server menampilkan halaman profil rahasia bernama **S
 * **Severity:** High (Kerahasiaan akun internal terekspos)
 * **CVSS v4.0 Score:** **7.1 (High)**
 * **CVSS Vector:** `CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N`
+![cvss](cvss_flag3.png).
 
+### Saran Rekomendasi Mitigasi
+1. Implementasi Authorization Check (Access Control)
+   
+   Jangan hanya mengandalkan status login (Authentication). Setiap kali aplikasi memproses request ke profile.php?id=X, pastikan ada logika tambahan di level           backend yang mengecek apakah user yang meminta halaman tersebut benar-benar memiliki wewenang (privilege) untuk melihat data dari ID target tersebut.
+   
+3. Gunakan UUID/GUID (Universally Unique Identifier)
+   
+    Gantilah format ID yang berurutan/sekuensial (seperti 1, 2, atau 13) pada parameter URL dengan string acak yang panjang, seperti UUID (contoh: 123e4567-e89b-        12d3-a456-426614174000). Ini akan mencegah penyerang melakukan enumerasi (fuzzing) atau menebak ID profil pengguna lain.
+   
+5. Pemisahan Tampilan Akun Sistem
+   
+   Terapkan perlindungan ekstra di tingkat database atau di dalam kode aplikasi (seperti filter kondisi) yang secara eksplisit memblokir segala bentuk akses publik     ke entitas sistem internal seperti sysbot. Akun-akun berlevel sistem tidak boleh di-render sama sekali oleh antarmuka web, terlepas dari ID apa pun yang             dimasukkan oleh pengguna.

@@ -43,7 +43,8 @@ Contoh akses setelah file berhasil diunggah:
 http://target/uploads/upload_69a7bf050497e_PintuBelakang.PhP?cmd=ls
 ```
 
-{Screenshot file backdoor sebelum diupload}
+<img width="1135" height="582" alt="image" src="https://github.com/user-attachments/assets/a89ff481-4bf8-4dc9-93f2-19d592807d57" />
+
 
 ---
 
@@ -62,10 +63,9 @@ Kami kemudian:
 * Mengubah ekstensi file menjadi `.PhP`
 * Mengatur `Content-Type: image/png`
 * Mengirim ulang request yang telah dimodifikasi
-
-{Screenshot intercept request di Burp Suite}
-{Screenshot request setelah dimodifikasi}
-{Screenshot response sukses upload}
+<img width="973" height="84" alt="image" src="https://github.com/user-attachments/assets/cdc800db-6e6b-4123-8dfc-07d9ba1da656" />
+<img width="900" height="125" alt="image" src="https://github.com/user-attachments/assets/79bcb130-30eb-4663-b3a5-8dda0ee8362e" />
+<img width="1069" height="117" alt="{F773B142-1B11-48BF-B283-106D875AFADC}" src="https://github.com/user-attachments/assets/8b56d0cb-635a-4b94-8970-98c5f7a4d6e0" />
 
 ---
 
@@ -82,8 +82,8 @@ Dari hasil tersebut ditemukan folder:
 ```
 Secrets
 ```
+<img width="120" height="70" alt="image" src="https://github.com/user-attachments/assets/ced04709-abf8-453b-801b-b871ab2b3d9e" />
 
-{Screenshot hasil ls ../../}
 
 Kemudian dilakukan eksplorasi lebih lanjut hingga menemukan file:
 
@@ -91,8 +91,8 @@ Kemudian dilakukan eksplorasi lebih lanjut hingga menemukan file:
 api_credentials.txt
 ```
 
-{Screenshot isi folder Secrets}
-{Screenshot isi file api_credentials.txt}
+<img width="120" height="70" alt="image" src="https://github.com/user-attachments/assets/18d43570-45a7-426b-b55c-7d170a9d7d25" />
+<img width="591" height="256" alt="image" src="https://github.com/user-attachments/assets/420c51a6-7d37-46e4-b6e2-96f8eb135604" />
 
 ---
 
@@ -106,8 +106,8 @@ sk_live_pharos_9x7k2m
 
 **Bukti Flag Benar:**
 `sk_live_pharos_9x7k2m`
+<img width="511" height="128" alt="image" src="https://github.com/user-attachments/assets/af42069b-7675-4897-b2ed-f0c55709c35f" />
 
-{Screenshot bukti flag benar di platform CTF}
 
 ---
 

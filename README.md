@@ -39,7 +39,7 @@ Klik flag yang ingin kamu lihat:
 | 5    | Internal API Version                  | ✅ Completed  |
 | 6    | API Secret Disclosure                 | ✅ Completed  |
 | 7    | RSS Import Exploit                    | ✅ Completed  |
-| 8    | TBD                                   | ✅ Completed  |
+| 8    | Decrypting Admin Secrets              | ✅ Completed  |
 | 9    | –                                     | ⏳ Not Solved |
 | 10   | –                                     | ⏳ Not Solved |
 | 11   | –                                     | ⏳ Not Solved |

@@ -4,7 +4,7 @@
 Repository ini berisi dokumentasi dan *writeup* untuk seluruh tantangan CTF pada aplikasi **Nac News**.
 
 Total challenge: **11 Flag**
-Progress saat ini: **8 / 11 Flag Completed**
+Progress saat ini: **9 / 11 Flag Completed**
 
 ---
 

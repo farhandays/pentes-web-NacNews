@@ -52,8 +52,9 @@ Setelah memasukkan *ciphertext* ke dalam input, CyberChef langsung memunculkan t
 ### Vulnerability Assessment
 * **Vulnerability:** Weak/Custom Cryptography & Information Disclosure via SQLi
 * **Severity:** High (Data kredensial dan rahasia internal dapat dibaca dalam bentuk teks terang)
-* **CVSS v4.0 Score:** **7.1 (High)**
+* **CVSS v4.0 Score:** **8.8 (High)**
 * **CVSS Vector:** `CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N`
+![cvss](cvss_flag8.png).
 
 ### Saran Rekomendasi Mitigasi
 1. **Gunakan Standar Enkripsi Industri (Avoid "Roll Your Own Crypto")**

@@ -7,7 +7,7 @@ Apa rahasia terakhir yang ditemukan di halaman /admin/vault.php setelah berhasil
 💡 Hint: Cookie Forgery, Broken Acces Control
 
 ### Analysis
-Setelah sebelumnya memperoleh akses ke halaman admin diagnostics melalui token yang didapat dari '../../../../var/log/nac/admin_actions.log' (Flag 9), kami melanjutkan eksplorasi terhadap fitur tersebut. Halaman /admin/diagnostics.php menyediakan fungsi network diagnostic yang memungkinkan eksekusi perintah sistem secara langsung dari input pengguna.
+Setelah sebelumnya memperoleh akses ke halaman admin diagnostics melalui token yang didapat dari `../../../../var/log/nac/admin_actions.log` (Flag 9), kami melanjutkan eksplorasi terhadap fitur tersebut. Halaman `/admin/diagnostics.php` menyediakan fungsi network diagnostic yang memungkinkan eksekusi perintah sistem secara langsung dari input pengguna.
 
 Meskipun terdapat klaim pembatasan karakter berbahaya, implementasi filtering ternyata tidak efektif. Hal ini membuka peluang terjadinya Command Injection, yang memungkinkan kami menjalankan perintah sistem di sisi server.
 
